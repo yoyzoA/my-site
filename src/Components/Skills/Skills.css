@@ -95,3 +95,30 @@
   margin: 60px auto 24px auto;
   border-radius: 2px;
 }
+
+@media (max-width: 600px) {
+  .skills-title {
+    font-size: 1.8rem;
+  }
+
+  .skills-separator,
+  .skills-separator2 {
+    width: 90%;
+  }
+
+  .skill-name {
+    width: auto;
+    font-size: 0.9rem;
+  }
+
+  .skill-level {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .skills-separator,
+  .skills-separator2 {
+    width: 600px;
+  }
+}

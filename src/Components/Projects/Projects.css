@@ -73,3 +73,28 @@
   margin: 0 auto 24px auto;
   border-radius: 2px;
 }
+
+@media (max-width: 600px) {
+  .projects-title {
+    font-size: 1.8rem;
+  }
+
+  .projects-list {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  .skills-separator {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .projects-list {
+    gap: 20px;
+  }
+}

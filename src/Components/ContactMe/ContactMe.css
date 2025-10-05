@@ -62,3 +62,24 @@
   transform: scale(1.12);
   box-shadow: 0 4px 16px rgba(33,150,243,0.18);
 }
+
+@media (max-width: 600px) {
+  .contactme-title {
+    font-size: 1.6rem;
+  }
+
+  .contactme-info {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .contactme-icons {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .contactme-icon {
+    width: 36px;
+    height: 36px;
+  }
+}
