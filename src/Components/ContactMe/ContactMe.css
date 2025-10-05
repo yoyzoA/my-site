@@ -1,85 +1,67 @@
 .contactme-container {
-  min-height: 40vh;
-  width: 100vw;
-  background: linear-gradient(135deg, #23283a 60%, #2196f3 100%);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 60px 20px 40px 20px;
-  border-radius: 0;
-  margin: 0;
-  box-shadow: 0 8px 32px rgba(33,150,243,0.18);
-  position: relative;
-  left: 50%;
-  right: 50%;
-  transform: translateX(-50%);
-  bottom: 0;
-  margin-top: 50px;
+    min-height: 40vh;
+    width: 100%;
+    background: linear-gradient(135deg, #23283a 60%, #2196f3 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px 40px 20px;
+    box-shadow: 0 8px 32px rgba(33,150,243,0.18);
+    text-align: center;
 }
 
 .contactme-title {
-  font-size: 2.2rem;
-  margin-bottom: 32px;
-  letter-spacing: 1px;
-  color: #fff;
+    font-size: clamp(1.6rem, 5vw, 2.2rem);
+    margin-bottom: 32px;
+    letter-spacing: 1px;
 }
 
 .contactme-info {
-  margin-bottom: 40px;
-  font-size: 1.15rem;
-  text-align: center;
+    margin-bottom: 40px;
+    font-size: clamp(1rem, 3vw, 1.15rem);
 }
 
 .contactme-link {
-  color: #90caf9;
-  text-decoration: none;
-  transition: text-decoration 0.2s;
+    color: #90caf9;
+    text-decoration: none;
+    transition: text-decoration 0.2s;
 }
 
 .contactme-link:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .contactme-icons {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  margin-top: 24px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 24px;
 }
 
 .contactme-icon {
-  width: 48px;
-  height: 48px;
-  transition: transform 0.2s, box-shadow 0.2s;
-  border-radius: 12px;
-  padding: 6px;
-  box-shadow: 0 2px 8px rgba(33,150,243,0.10);
+    width: 48px;
+    height: 48px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 12px;
+    padding: 6px;
+    box-shadow: 0 2px 8px rgba(33,150,243,0.10);
 }
 
 .contactme-icon:hover {
-  transform: scale(1.12);
-  box-shadow: 0 4px 16px rgba(33,150,243,0.18);
+    transform: scale(1.12);
+    box-shadow: 0 4px 16px rgba(33,150,243,0.18);
 }
 
+/* Mobile */
 @media (max-width: 600px) {
-  .contactme-title {
-    font-size: 1.6rem;
-  }
-
-  .contactme-info {
-    font-size: 1rem;
-    padding: 0 10px;
-  }
-
-  .contactme-icons {
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-
-  .contactme-icon {
-    width: 36px;
-    height: 36px;
-  }
+    .contactme-icons {
+        gap: 16px;
+    }
+    .contactme-icon {
+        width: 36px;
+        height: 36px;
+    }
 }

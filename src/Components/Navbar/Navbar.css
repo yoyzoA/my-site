@@ -1,46 +1,105 @@
-nav{
-    background-color: rgba(0, 0, 0, 0.85); /* Slightly transparent black */
-    overflow: hidden;
-    width: 100%;
-    color: white;
-    padding: 4px 0;
-    position: fixed;
-    top: 0;
-    left: 0;    
-    display: flex;
-    align-items: center;
-    justify-content: space-between ;
-    z-index: 10;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);   
-    height: min-content;
-}
-.logo{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-left: 20px;
-    width: 50px;
-    color: white;
-    filter: invert(1);
-}
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 5px 20px;
-    font-size: 16px;
-    margin-right: 20px  ;
+/* Navbar container */
+.navbar {
+  background-color: rgba(0,0,0,0.85);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 60px;
 }
 
-@media (max-width: 600px) {
-  nav ul {
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.btn {
+  padding: 6px 12px;
+  background: #2196f3;
+  color: white;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* Hamburger (hidden on desktop) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s;
+}
+
+.bar.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.bar.open:nth-child(2) {
+  opacity: 0;
+}
+.bar.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hamburger {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
   }
 
-  nav ul li {
-    display: block;
-    margin: 8px 0;
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.95);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    max-height: 500px; /* enough to show all links */
+  }
+
+  .nav-links li {
     text-align: center;
+    padding: 12px 0;
+    width: 100%;
+  }
+
+  .btn {
+    margin: 0 auto;
   }
 }

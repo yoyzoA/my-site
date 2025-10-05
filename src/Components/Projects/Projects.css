@@ -1,100 +1,77 @@
-
-
 .projects-title {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 32px;
-  color: #ffffff; /* main accent color */
-  letter-spacing: 1px;
+    text-align: center;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    margin-bottom: 32px;
+    color: #ffffff;
+    letter-spacing: 1px;
 }
 
 .projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-card {
-  background: #222; /* matches experience/skills cards */
-  border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(33,150,243,0.10);
-  padding: 28px 24px;
-  width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
-  border: 1.5px solid transparent;
+    background: #222;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(33,150,243,0.10);
+    padding: 28px 24px;
+    width: 90%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
+    margin: 10px auto;
 }
 
 .project-card:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 8px 32px rgba(33,150,243,0.18);
-  border: 1.5px solid #2196f3;
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(33,150,243,0.18);
+    border: 1.5px solid #2196f3;
 }
 
 .project-card h2 {
-  margin: 0 0 10px 0;
-  font-size: 1.35rem;
-  color: #2196f3; /* accent color */
+    margin: 0 0 10px 0;
+    font-size: 1.35rem;
+    color: #2196f3;
 }
 
 .project-card a {
-  color: #2196f3;
-  text-decoration: none;
-  transition: text-decoration 0.2s;
+    color: #2196f3;
+    text-decoration: none;
+    transition: text-decoration 0.2s;
 }
 
 .project-card a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .project-card p {
-  color: #bdbdbd;
-  font-size: 1rem;
-  margin-bottom: 16px;
-  min-height: 48px;
+    color: #bdbdbd;
+    font-size: 1rem;
+    margin-bottom: 16px;
 }
 
 .project-card span {
-  margin-right: 16px;
-  font-size: 1rem;
-  color: #90caf9;
-  background: #23283a;
-  padding: 4px 10px;
-  border-radius: 8px;
-  font-weight: 500;
+    margin: 5px 8px;
+    font-size: 0.95rem;
+    color: #90caf9;
+    background: #23283a;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-weight: 500;
 }
+
 .skills-separator {
-  width: 800px;
-  height: 4px;
-  background: linear-gradient(90deg, #ffffff, #2196f3);
-  margin: 0 auto 24px auto;
-  border-radius: 2px;
-}
-
-@media (max-width: 600px) {
-  .projects-title {
-    font-size: 1.8rem;
-  }
-
-  .projects-list {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .project-card {
     width: 90%;
-  }
-
-  .skills-separator {
-    width: 90%;
-  }
-}
-
-@media (max-width: 1024px) {
-  .projects-list {
-    gap: 20px;
-  }
+    max-width: 800px;
+    height: 4px;
+    background: linear-gradient(90deg, #ffffff, #2196f3);
+    margin: 0 auto 24px auto;
+    border-radius: 2px;
 }
