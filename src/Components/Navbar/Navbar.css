@@ -1,0 +1,31 @@
+nav{
+    background-color: rgba(0, 0, 0, 0.85); /* Slightly transparent black */
+    overflow: hidden;
+    width: 100%;
+    color: white;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);   
+    height: min-content;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 20px;
+    width: 50px;
+    color: white;
+    filter: invert(1);
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 5px 20px;
+    font-size: 16px;
+    margin-right: 20px  ;
+}

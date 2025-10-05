@@ -1,0 +1,97 @@
+.skills-container {
+    padding: 40px 20px;
+  width: 100%;
+  color: #fff;
+}
+
+.nav-links {
+    justify-content: center;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+    
+  margin-right: 10px;
+}
+
+.btn {
+  padding: 8px 16px;
+  cursor: pointer;
+  background: #eee;
+  color: #333333;
+  border: none;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn.active {
+  background: #333;
+  color: #fff;
+}
+
+.tab-content {
+  margin-top: 24px;
+  color: #fff;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.skill-name {
+  width: 120px;
+  font-weight: 500;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 16px;
+  background: #444;
+  border-radius: 8px;
+  margin: 0 12px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50, #2196f3);
+  border-radius: 8px 0 0 8px;
+  transition: width 0.5s;
+}
+
+.skill-level {
+  width: 40px;
+  text-align: right;
+  font-size: 0.95em;
+}
+.skills-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.skills-separator {
+  width: 800px;
+  height: 4px;
+  background: linear-gradient(90deg, #ffffff, #2196f3);
+  margin: 0 auto 24px auto;
+  border-radius: 2px;
+}
+.skills-separator2 {
+  width: 800px;
+  height: 4px;
+  background: linear-gradient(90deg, #ffffff, #2196f3);
+  margin: 60px auto 24px auto;
+  border-radius: 2px;
+}

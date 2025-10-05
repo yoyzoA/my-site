@@ -1,0 +1,22 @@
+.AboutMe {
+    height: 50vh;
+    width: 100%;
+    color: white;
+    display: flex;              /* Center content vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;     /* Stack children vertically */
+    padding-bottom: 20px;
+    
+}
+
+.AboutMe p {
+    font-size: 1.5rem;            /* Make paragraph text bigger */
+    text-align: center;         /* Center text inside the paragraph */
+    max-width: 800px;          /* Limit the width of the paragraph */
+    align-items: left;
+}
+.aboutme-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
