@@ -12,7 +12,7 @@ const Navbar = () => {
             <li><a href="#projects">Projects</a></li>
             <li><a href="#Contact">Contact Me</a></li>
             <li>
-              <a href="my-site/YorgoAssalCV.pdf" download className='btn'>
+              <a href="/YorgoAssalCV.pdf" download className='btn'>
                 Download CV
               </a>
             </li>
