@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://yoyzoA.github.io/my-site/",
+  "homepage": "https://yoyzoa.github.io/my-site/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
